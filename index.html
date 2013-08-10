@@ -4,21 +4,20 @@
     <head>
         <meta charset="utf-8" />
         <title>Toastmaster Timer</title>
-        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <!-- ToDo: Add favicon -->
+        <!-- <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /> -->
         <meta name="viewport" content="width=device-width" />
-        <link href="/Content/css?v=WMr-pvK-ldSbNXHT-cT0d9QF2pqi7sqz_4MtKl04wlw1" rel="stylesheet"/>
+        <link href="Site.css" rel="stylesheet"/>
 
-        <script src="/bundles/modernizr?v=jmdBhqkI3eMaPZJduAyIYBj7MpXrGd2ZqmHAOSNeYcg1"></script>
-
-
-        <link href="/content/toastmaster.css" rel="stylesheet" />
-        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+        <link href="toastmaster.css" rel="stylesheet" />
+        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <!-- <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" /> -->
     </head>
     <body>
         <div id="body">
             <section class="content-wrapper main-content clear-fix">
-                <h2 style="margin-bottom: 20px;">Toastmasters Timer by Guy Ellis</h2>
+                <h1 style="margin-bottom: 20px;">Toastmaster Timer</h1>
 
                 <div class="container-fluid">
                     <div class="row-fluid" id="buttons" style="font-size: large"></div>
@@ -48,7 +47,7 @@
                 </div>
             </section>
         </div>
-        
+
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
@@ -56,20 +55,17 @@
                 </div>
             </div>
         </footer>
-
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-164775-23', 'toastmastertimer.com');
-          ga('send', 'pageview');
-        </script>
+<!--
+        <script src="/bundles/jquery?v=wBUqTIMTmGl9Hj0haQMeRbd8CoM3UaGnAwp4uDEKfnM1"></script> 
+-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- <script src="/bootstrap/js/bootstrap.min.js"></script> -->
+        <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="toastmaster.js"></script>
 
         <!-- AddThis Smart Layers BEGIN -->
         <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520675fc00be804f"></script>
+        <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520675fc00be804f"></script>
         <script type="text/javascript">
           addthis.layers({
             'theme' : 'transparent',
@@ -79,10 +75,9 @@
             }, 
             'follow' : {
               'services' : [
-                {'service': 'facebook', 'id': 'mypivots.fan'},
-                {'service': 'twitter', 'id': 'mypivots'},
-                {'service': 'linkedin', 'id': 'company/mypivots'},
-                {'service': 'google_follow', 'id': 'b/116175848514631524771/'}
+                {'service': 'twitter', 'id': 'wildfiction'},
+                {'service': 'linkedin', 'id': 'in/wildfiction'},
+                {'service': 'google_follow', 'id': 'b/111266032064731398941/'}
               ]
             },  
             'whatsnext' : {},  
@@ -93,10 +88,15 @@
         </script>
         <!-- AddThis Smart Layers END -->
 
-        <script src="/bundles/jquery?v=wBUqTIMTmGl9Hj0haQMeRbd8CoM3UaGnAwp4uDEKfnM1"></script>
+        <!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="/bootstrap/js/bootstrap.min.js"></script>
-        <script src="/scripts/toastmaster.js"></script>
+          ga('create', 'UA-164775-23', 'toastmastertimer.com');
+          ga('send', 'pageview');
+        </script>
     </body>
 </html>

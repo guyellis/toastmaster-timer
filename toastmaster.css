@@ -1,0 +1,72 @@
+﻿body
+{
+    font-family: 'Segoe UI', sans-serif
+}
+
+span {
+    font-style: italic
+}
+
+#trafficlight
+{
+    /*font-size:28em;
+    display:block;
+    background-color: gray;*/
+    height: 600px;
+    line-height: 600px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#green-light, #yellow-light, #red-light
+{
+    width: 100px;
+    font-size: xx-large;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+}
+
+#red-light
+{
+    background-color:#FF4040;
+    color:white;
+}
+
+#yellow-light
+{
+    background-color:#FCDC3B;
+}
+
+#green-light
+{
+    background-color:#A7DA7E;
+}
+
+
+.speech-type
+{
+    padding:10px;
+    margin: 5px;
+    background-color: #E0EAF1;
+    color: #3E6D8E;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px #535353;
+}
+
+.speech-type:hover
+{
+    background-color: #3E6D8E;
+    color: #E0EAF1;
+    cursor: pointer;
+}
+
+.active-speech
+{
+    background-color: #acf;
+}
+
+
