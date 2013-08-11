@@ -3,6 +3,12 @@
     font-family: 'Segoe UI', sans-serif
 }
 
+#body {
+    background-color: #efeeef;
+    clear: both;
+    padding-bottom: 35px;
+}
+
 span {
     font-style: italic
 }
@@ -69,4 +75,20 @@ span {
     background-color: #acf;
 }
 
+
+footer {
+    clear: both;
+    background-color: #e2e2e2;
+    font-size: .8em;
+    height: 100px;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.float-left {
+    float: left;
+}
 
