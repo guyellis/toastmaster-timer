@@ -39,7 +39,11 @@ var TSTimer = (function () {
     }
     TSTimer.prototype.resetButton = function () {
         this.stop();
-        $('#trafficlight').text('0:00');
+	    if($('#showDigits').is(':checked')){
+		    $('#trafficlight').text('0:00');
+	    } else {
+		    $('#trafficlight').text('');
+	    }
         $('#body').css('background-color', '#EFEEEF');
         this.startTime = null;
     };
@@ -59,7 +63,11 @@ var TSTimer = (function () {
     };
 
     TSTimer.prototype.setElementText = function (elapsedSeconds) {
-        $('#trafficlight').text(this.formatTime(elapsedSeconds));
+	    if($('#showDigits').is(':checked')){
+		    $('#trafficlight').text(this.formatTime(elapsedSeconds));
+	    } else {
+		    $('#trafficlight').text(''); // probably redundant
+	    }
         if (elapsedSeconds >= this.red) {
             $('#body').css('background-color', '#FF4040');
         } else if (elapsedSeconds >= this.yellow) {
