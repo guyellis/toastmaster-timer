@@ -3,6 +3,10 @@
     font-family: 'Segoe UI', sans-serif
 }
 
+.label {
+  font-size: 100%;
+}
+
 #body {
     background-color: #efeeef;
     clear: both;
@@ -25,10 +29,9 @@ span {
 
 #green-light, #yellow-light, #red-light
 {
-    width: 100px;
     font-size: xx-large;
     text-align: right;
-    height: 30px;
+    height: 46px;
     line-height: 30px;
 }
 
