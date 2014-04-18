@@ -1,113 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Toastmaster Speech Timer</title>
-        <meta description="Practice your speech with confidence. This timer can be used to practice any speech type. It was originally created for practicing Toastmaster speeches. Large font and big colors enable you to see it from a distance."
-        
-        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
+<head>
+  <meta charset="utf-8"/>
+  <title>Toastmaster Speech Timer</title>
+  <meta description="Practice your speech with confidence. This timer can be used to practice any speech type. It was originally created for practicing Toastmaster speeches. Large font and big colors enable you to see it from a distance."
 
-        <link href="toastmaster.css" rel="stylesheet" />
-        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <meta name="viewport" content="width=device-width"/>
 
-        <link rel="canonical" href="http://www.toastmastertimer.com/">
-    </head>
-    <body>
-        <div id="body">
-            <section class="content-wrapper">
-                <h1 style="margin-bottom: 20px;">Toastmaster Speech Timer</h1>
+  <link href="toastmaster.css" rel="stylesheet"/>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-                <div>
-                    <div class="row" id="buttons" style="font-size: large"></div>
-                    <br />
-                    <div class="row" id="content" style="font-size: xx-large; height:20px; line-height:20px">
-                        <div class="span2">
-                            <input id="green-light" type="text" />
-                        </div>
-                        <div class="span2">
-                            <input id="yellow-light" type="text" />
-                        </div>
+  <link rel="canonical" href="http://www.toastmastertimer.com/">
+</head>
+<body>
+<div id="body">
+  <section class="content-wrapper">
+    <h1 style="margin-bottom: 20px;">Toastmaster Speech Timer</h1>
 
-                        <div class="span2">
-                            <input id="red-light" type="text" />
-                        </div>
+    <div>
+      <div class="row" id="buttons" style="font-size: large"></div>
+      <br/>
 
-                        <div class="span2">
-                            <button class="btn btn-default btn-large btn-primary" id="btnStart" type="button" value="Start">Start</button>
-                        </div>
-                        <div class="span2">
-                            <button class="btn btn-default btn-large" id="btnReset" type="button" value="Reset">Reset</button>
-                        </div>
-                    </div>
-                  <br />
-                  <div>
-                    <label class="label label-default"><input type="checkbox" id="showDigits" name="showDigits" value="showDigits" checked="checked"
-                                  title="When you are giving a toastmasters speech you will not see the time. All you will have is the green, yellow, red lights come on. In order to simulate a real world you can disable the digits being shown.">Show Digits</label>
-                  </div>
-
-                  <div class="row" id="trafficlight" style="font-size: 28em;line-height:600px">
-                        0:00
-                    </div>
-                </div>
-            </section>
+      <div class="row" id="content" style="font-size: xx-large; height:20px; line-height:20px">
+        <div class="span2">
+          <input id="green-light" type="text"/>
+        </div>
+        <div class="span2">
+          <input id="yellow-light" type="text"/>
         </div>
 
-        <div>
-            <g:plusone></g:plusone>
+        <div class="span2">
+          <input id="red-light" type="text"/>
         </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; 2013 - Guy Ellis</p>
-                </div>
-            </div>
-        </footer>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="toastmaster.js"></script>
 
-        <!-- AddThis Smart Layers BEGIN -->
-        <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
-        <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520675fc00be804f"></script>
-        <script type="text/javascript">
-          addthis.layers({
-            'theme' : 'transparent',
-            'share' : {
-              'position' : 'left',
-              'numPreferredServices' : 5
-            }, 
-            'follow' : {
-              'services' : [
-                {'service': 'twitter', 'id': 'wildfiction'},
-                {'service': 'linkedin', 'id': 'wildfiction'},
-                {'service': 'google_follow', 'id': 'b/111266032064731398941/'}
-              ]
-            },  
-            'whatsnext' : {},  
-            'recommended' : {
-              'title': 'Recommended for you:'
-            } 
-          });
-        </script>
-        <!-- AddThis Smart Layers END -->
+        <div class="span2">
+          <button class="btn btn-default btn-large btn-primary" id="btnStart" type="button" value="Start">Start</button>
+        </div>
+        <div class="span2">
+          <button class="btn btn-default btn-large" id="btnReset" type="button" value="Reset">Reset</button>
+        </div>
+      </div>
+      <br/>
 
-        <!-- 
-            Google Plus One button:
-            Will appear where the <g:plusone></g:plusone> tag.
-         -->
-        <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+      <div>
+        <label class="label label-default"><input type="checkbox" id="showDigits" name="showDigits" value="showDigits"
+                                                  checked="checked"
+                                                  title="When you are giving a toastmasters speech you will not see the time. All you will have is the green, yellow, red lights come on. In order to simulate a real world you can disable the digits being shown.">Show
+          Digits</label>
+      </div>
 
-        <!-- Google Analytics -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+      <div class="row" id="trafficlight" style="font-size: 28em;line-height:600px">
+        0:00
+      </div>
+    </div>
+  </section>
+</div>
 
-          ga('create', 'UA-164775-23', 'toastmastertimer.com');
-          ga('send', 'pageview');
-        </script>
-    </body>
+<div>
+  <g:plusone></g:plusone>
+</div>
+<footer>
+  <div class="content-wrapper">
+    <div class="float-left">
+      <p>&copy; 2013 - Guy Ellis</p>
+    </div>
+  </div>
+</footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="toastmaster.js"></script>
+
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520675fc00be804f"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme': 'transparent',
+    'share': {
+      'position': 'left',
+      'numPreferredServices': 5
+    },
+    'follow': {
+      'services': [
+        {'service': 'twitter', 'id': 'wildfiction'},
+        {'service': 'linkedin', 'id': 'wildfiction'},
+        {'service': 'google_follow', 'id': 'b/111266032064731398941/'}
+      ]
+    },
+    'whatsnext': {},
+    'recommended': {
+      'title': 'Recommended for you:'
+    }
+  });
+</script>
+<!-- AddThis Smart Layers END -->
+
+<!--
+    Google Plus One button:
+    Will appear where the <g:plusone></g:plusone> tag.
+ -->
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+
+<!-- Google Analytics -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-164775-23', 'toastmastertimer.com');
+  ga('send', 'pageview');
+</script>
+</body>
 </html>
